@@ -35,14 +35,6 @@ header {
   }
 }
 
-.jobs-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 85%;
-}
 
 .job {
   background-color: var(--light-job-color);
@@ -50,28 +42,31 @@ header {
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  width: 700px;
-  padding: 2em;
+  width: 450px;
+  padding: 0.5em;
+  margin: 1em 0 0 1em 0;
+
   border: 1px solid var(--border-light);
   text-align: center;
   display: flex;
+  margin: 0 0 2em 0;
   flex-direction: column;
   img {
     object-fit: cover;
     width: 100px;
     border-radius: 30%;
     justify-content: right;
-    margin: 0 0 2em 0;
   }
 }
 
 .card {
-  margin-top: 1em;
   padding: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin: 1em 0 0 1em 0;
+
   ul {
     list-style-type: none;
     text-align: center;
@@ -118,4 +113,10 @@ header {
 
 .submit-btn:active { 
   transform: scale(0.95);
+}
+
+.grid-wrapper { 
+  width: 500px;
+  height: 500x;
+
 }
