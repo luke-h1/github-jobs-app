@@ -1,7 +1,9 @@
 const form = document.getElementById('form-control');
 const jobPreference = document.getElementById('job-input');
 const div = document.getElementById('output');
+const loadingEl = document.getElementById('loading');
 async function fetchJobData(e) {
+  showLoading();
   e.preventDefault();
   const job = jobPreference.value;
   // console.log(`Job: ${job}, area: ${area}`);
@@ -13,7 +15,16 @@ async function fetchJobData(e) {
   showJobDataDOM(json);
 }
 
+function showLoading() {
+  loadingEl.style.display = 'block';
+}
+
+function hideLoading() {
+  loadingEl.style.display = 'none';
+}
+
 function showJobDataDOM(json) {
+  hideLoading();
   let output = '';
   json.forEach((job) => {
     output += `

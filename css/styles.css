@@ -200,4 +200,10 @@ p {
   height: 500x;
 }
 
+.loading {
+  border-radius: 20%;
+  width: 20%;
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
