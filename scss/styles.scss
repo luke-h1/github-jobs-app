@@ -1,4 +1,4 @@
-@import 'utilities';
+@import "utilities";
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +46,10 @@ header {
 
 .job {
   background-color: var(--light-job-color);
-  border-radius: 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   width: 700px;
   padding: 2em;
   border: 1px solid var(--border-light);
@@ -87,6 +90,32 @@ header {
     word-wrap: wrap;
     font-size: 15px;
     line-height: 1.6;
-
   }
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  width: 50%;
+  input {
+    display: block;
+    padding: 15px;
+    outline: 0;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    width: 50%;
+  }
+}
+
+.submit-btn { 
+  background-color: var(--btn-light);
+  font-weight: 700; 
+  font-size: 14px;
+}
+
+.submit-btn:active { 
+  transform: scale(0.95);
 }

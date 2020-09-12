@@ -2,8 +2,9 @@
   --header-light: #495057;
   --icon-light: #eaeaea;
   --icon-green: #A4D4B4;
-  --light-job-color: #efd3d7;
+  --light-job-color: #adb5bd;
   --border-light: #52b788;
+  --btn-light: #EAF2EF ;
 }
 
 * {
@@ -52,7 +53,10 @@ header svg:hover {
 
 .job {
   background-color: var(--light-job-color);
-  border-radius: 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   width: 700px;
   padding: 2em;
   border: 1px solid var(--border-light);
@@ -92,6 +96,33 @@ header svg:hover {
   word-wrap: wrap;
   font-size: 15px;
   line-height: 1.6;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  width: 50%;
+}
+.form-control input {
+  display: block;
+  padding: 15px;
+  outline: 0;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.submit-btn {
+  background-color: var(--btn-light);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.submit-btn:active {
+  transform: scale(0.95);
 }
 
 /*# sourceMappingURL=styles.css.map */
