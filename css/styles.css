@@ -1,0 +1,97 @@
+:root {
+  --header-light: #495057;
+  --icon-light: #eaeaea;
+  --icon-green: #A4D4B4;
+  --light-job-color: #efd3d7;
+  --border-light: #52b788;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 3em;
+  background-color: var(--header-light);
+  width: 100%;
+  padding: 20px;
+}
+header h1 {
+  text-align: center;
+}
+header svg {
+  fill: var(--icon-light);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+}
+header svg:hover {
+  fill: var(--icon-green);
+  cursor: pointer;
+}
+
+.jobs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 85%;
+}
+
+.job {
+  background-color: var(--light-job-color);
+  border-radius: 5px;
+  width: 700px;
+  padding: 2em;
+  border: 1px solid var(--border-light);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.job img {
+  object-fit: cover;
+  width: 100px;
+  border-radius: 30%;
+  justify-content: right;
+  margin: 0 0 2em 0;
+}
+
+.card {
+  margin-top: 1em;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.card ul {
+  list-style-type: none;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.card h2 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.card p {
+  word-wrap: wrap;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=styles.css.map */
