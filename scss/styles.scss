@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @import "mobile";
 }
 
 header {
@@ -23,30 +24,28 @@ header {
     text-align: center;
   }
   svg {
-    fill: var(--icon-light);
+    fill: var(--icon-dark);
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     &:hover {
-      fill: var(--icon-green);
+      fill: var(--icon-hover-lightmode);
       cursor: pointer;
     }
   }
 }
 
-
 .job {
-  background-color: var(--light-job-color);
-  border-radius: 10px;
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  width: 700px;
-  padding: 0.5em;
-  margin: 1em 0 0 1em 0;
-
-  border: 1px solid var(--border-light);
+  background-color: var(--bg-light);
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  width: 750px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+  border: 1px solid var(--border-dark);
   text-align: center;
   display: flex;
   margin: 0 0 2em 0;
@@ -60,35 +59,41 @@ header {
 }
 
 .card {
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   margin: 1em 0 0 1em 0;
 
-  ul {
-    list-style-type: none;
-    text-align: center;
-    line-height: 1.6;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    li { 
-      word-wrap: wrap;
-      
-    }
+  li {
+    word-wrap: wrap;
   }
+}
 
-  h2 {
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+h2 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+p {
+  word-wrap: wrap;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.card--job-details {
+  list-style-type: none;
+  text-align: center;
+  word-wrap: wrap;
+  li {
+    word-wrap: wrap;
+    font-size: 15px;
   }
-
   p {
     word-wrap: wrap;
     font-size: 15px;
-    line-height: 1.6;
   }
 }
 
@@ -109,18 +114,17 @@ header {
   }
 }
 
-.submit-btn { 
+.submit-btn {
   background-color: var(--btn-light);
-  font-weight: 700; 
+  font-weight: 700;
   font-size: 14px;
 }
 
-.submit-btn:active { 
+.submit-btn:active {
   transform: scale(0.95);
 }
 
-.grid-wrapper { 
+.grid-wrapper {
   width: 500px;
   height: 500x;
-
 }

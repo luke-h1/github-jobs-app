@@ -12,7 +12,6 @@ async function fetchJobData(e) {
   console.log(json);
   showJobDataDOM(json);
 }
-// TODO: SHORTEN LINKS WITH A LINK SHORTENER REGEX FUNCTION
 
 function showJobDataDOM(json) {
   let output = '';
@@ -24,13 +23,13 @@ function showJobDataDOM(json) {
         <h2>${job.title ? job.title : ''}</h2>
          <img src="${job.company_logo}" /> 
         <div class="card">
-          <ul>
+          <ul class="card--job-details">
             <li>Contract Type: ${job.type ? job.type : ''}</li>
             <li>Location: ${job.location ? job.location : ''}</li>
-            <li>Posted At: ${job.created_at ? job.created_at : ''}</li>
-            <li>How To Apply: ${job.how_to_apply ? job.how_to_apply : ''}</li>
-          </ul>
-        </div>
+            <li>Posted At: ${job.created_at ? job.created_at : ''}</li> 
+            <li><a href="${job.url ? job.url : ''}">Apply</a></li>
+            </ul>
+            </div>
       </div>
     </div>
     
